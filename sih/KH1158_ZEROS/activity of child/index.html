@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <title>Landing Page Design Using HTML & CSS</title>
+    <style>
+        .containe {
+    position: relative;
+    max-width: 81rem;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 3rem;
+    z-index: 10;
+  }
+  
+  header {
+    position: relative;
+    z-index: 70;
+  }
+  
+  header .containe {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .overlay {
+    display: none;
+  }
+.logo {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+  }
+  
+  .logo img {
+      width: 116px;
+      margin-right: 2.6rem;
+      margin-top: 1.0rem;
+  }
+  
+  .logo h3 {
+    margin-top: 1.0rem;
+
+    position: relative;
+    color: var(--darkTwo);
+    font-size: 3.55rem;
+    line-height: 1.2;
+    font-weight: 700;
+  }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="containe">
+            <div class="logo">
+                <img src="./logo.png" alt="Logo" />
+                <h3>GetVision</h3>
+            </div>
+        </div>
+    </header>
+    <div class="container">
+        <div class="header">
+
+            <nav>
+                <ul>
+                    <button class="btn" id="btn2"><a href="../Category-child/demo.html">Quiz</a></button>
+                    <button class="btn" id="btn4">NEXT</button>
+                    <button class="btn" id="btn2"><a href="../CHI/index.html">Game</a></button>
+                </ul>
+            </nav>
+            <button class="btn" id="btn4"><a href="../gv.html">Logout</a></button>
+        </div>
+        <div class="content">
+            <div class="text">
+                <h1>Welcome <br> <span>KIDSSSS</span></h1>
+                <p>Welcome to Get Vision we have alot fun activites for you kidsss... Get Ready!!!!<br> <br>
+                <button class="btn3">Next Task</button>
+            </div>
+            <div class="video">
+               
+            </div>
+        </div>
+    </div>
+</body>
+</html>

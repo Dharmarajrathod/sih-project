@@ -1,0 +1,131 @@
+*{
+  font-family: 'Baloo Bhai 2', cursive;
+}
+body{
+  height: 100vh;
+  width: 100%;
+  background: linear-gradient( #5279ed 0%, #e28aee 100%);
+}
+
+.container{
+  background: rgb(117 131 244);
+  margin: 120px auto;
+  max-width: 400px;
+  width: 100%;
+  border-radius: 5px;
+  padding: 25px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.container header{
+  font-size: 30px;
+  background: #4992ff;
+  border-radius: 6px;
+  padding: 6px;
+  margin: 30px auto;
+  color: rgb(83 71 169);
+}
+
+.box{
+  height: 45px;
+  width: 100%;
+  display: flex;
+  margin-left: 20px;
+}
+
+.box input{
+  width: 73%;
+  border:1px solid rgb(224, 20, 146);
+  border-radius: 5px;
+  font-size: 17px;
+  padding: 20px;
+}
+
+.box button{
+  background: rgb(4 73 243);
+  border: none;
+  outline: none;
+  width: 56px;
+  color: white;
+  font-size: 22px;
+  cursor: pointer;
+  border-radius: 5px;
+  margin-left: 2px;
+  transition: all 1s ease;
+  opacity: 0.6;
+  pointer-events: none;
+}
+
+.box button.active{
+  opacity: 1;
+  pointer-events:auto;
+}
+
+.box button:hover{
+  background: rgb(0, 40, 126);
+}
+
+.list{
+  margin-right:50px;
+  width: 94%;
+  max-height: 250px;
+}
+
+.list li{
+ list-style: none;
+ line-height: 45px;
+ height: 45px;
+ width: 98%;
+ position: relative;
+ background: rgb(195, 165, 165);
+ border-radius: 3px;
+ margin-bottom: 8px;
+ padding: 0 15px;
+ cursor: pointer;
+ opacity: 1;
+ pointer-events: auto;
+ overflow-y: hidden;
+}
+
+
+.remove{
+  position: absolute;
+  justify-content: space-between;
+  background: rgb(227, 21, 7);
+  color: rgb(211, 21, 154);
+  width: 50px;
+  text-align: center;
+  font-size: 20px;
+  right: -50px;
+  transition: 0.3s all ease-in;
+}
+
+.list li:hover .remove{
+  right: 0px;
+}
+
+.clearAll button{
+  background: rgb(228, 99, 90);
+  position: relative;
+  outline: none;
+  border: none;
+  width: 35px;
+  height: 36px;
+  color: white;
+  font-size: 17px;
+  cursor: pointer;
+  transition: all 0.3s ease-out;
+  bottom:0px;
+  opacity: 0.6;
+  pointer-events: none;
+}
+
+.clearAll button.active{
+  opacity: 1;
+  pointer-events: auto;
+}
+
+.clearAll button:hover{
+  bottom: 10px;
+}
